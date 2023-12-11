@@ -1,0 +1,136 @@
+#!/usr/bin/env python3
+
+import argparse
+import json
+import re
+
+
+def parse_meta_json(meta_json):
+    parsed_data = {}
+
+    for func_name, data in meta_json.items():
+        src_info = {}
+        asm_info = {}
+
+        for src_offset, line_info in data["src"].items():
+            start_offset, stop_offset = map(lambda i: int(i, 16), src_offset.split(":"))
+            for offset in range(start_offset, stop_offset + 1, 16):
+                src_info[offset] = line_info
+
+        for asm_offset, asm in data["asm"].items():
+            asm_info[int(asm_offset, 16)] = asm
+
+        parsed_data[func_name] = {"src": src_info, "asm": asm_info}
+
+    return parsed_data
+
+
+def match_function_name(string1, string2):
+    function_name = re.search(r"(\w+)\s*<\d+>\(", string2)
+    if function_name:
+        function_name = function_name.group(1)
+    else:
+        function_name = re.search(r"(\w+)\s*\(", string2)
+        if function_name:
+            function_name = function_name.group(0)[:-1]
+        else:
+            return False
+
+    if function_name in string1:
+        return True
+    else:
+        return False
+
+
+def get_location_info(parsed_data, func_name, offset):
+    for mangled_name in parsed_data:
+        if match_function_name(mangled_name, func_name):
+            func_info = parsed_data[mangled_name]
+            if "src" in func_info and offset in func_info["src"]:
+                line_info = func_info["src"][offset]
+            else:
+                line_info = None
+
+            if "asm" in func_info and offset in func_info["asm"]:
+                asm = func_info["asm"][offset]
+            else:
+                asm = None
+
+            return line_info, asm
+    return None, None
+
+
+def update_leak_json(leak_json, parsed_data):
+    all = {}
+    statistics = {
+        "origin": {"cf_leak": 0, "df_leak": 0},
+        "now": {"cf_leak": 0, "df_leak": 0},
+    }
+    see = {"df_leak": [], "cf_leak": []}
+    for leak_type, leaks in leak_json.items():
+        if leak_type == "kernel_leak":
+            if leaks:
+                all["kernel_leak"] = leaks
+            continue
+        for leak_context, leak_info in leaks.items():
+            for info in leak_info:
+                statistics["origin"][leak_type] += 1
+
+                kernel = info["kernel"]
+
+                offset = info["bb"]
+                if leak_type == "df_leak":
+                    offset = info["instr"]
+
+                line_info, asm = get_location_info(parsed_data, kernel, offset)
+
+                info["line_info"] = line_info
+                info["asm"] = asm
+
+                if kernel not in all:
+                    all[kernel] = {}
+                if leak_type not in all[kernel]:
+                    all[kernel][leak_type] = {}
+                if line_info not in all[kernel][leak_type]:
+                    if line_info not in see[leak_type]:
+                        statistics["now"][leak_type] += 1
+                        see[leak_type].append(line_info)
+
+                    all[kernel][leak_type][line_info] = [(offset, info["p"])]
+                else:
+                    all[kernel][leak_type][line_info].append((offset, info["p"]))
+
+    all["statistics"] = statistics
+
+    for k, v in see.items():
+        see[k] = sorted(v)
+
+    all["see"] = see
+
+    return all
+
+
+parser = argparse.ArgumentParser()
+parser.add_argument("meta_json_file", help="Path to the meta JSON file")
+parser.add_argument("leak_json_file", help="Path to the leak JSON file")
+parser.add_argument("output_file", help="Path to the output JSON file")
+args = parser.parse_args()
+
+
+with open(args.meta_json_file) as f:
+    meta_json = json.load(f)
+
+
+parsed_data = parse_meta_json(meta_json)
+
+
+with open(args.leak_json_file) as f:
+    leak_json = json.load(f)
+
+
+updated_leak_json = update_leak_json(leak_json, parsed_data)
+
+
+output_file = args.output_file
+with open(output_file, "w") as f:
+    json.dump(updated_leak_json, f, indent=4)
