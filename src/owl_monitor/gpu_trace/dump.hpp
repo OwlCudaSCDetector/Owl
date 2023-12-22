@@ -19,7 +19,7 @@ inline const char* to_str(JsonType jt) {
         }
 }
 
-namespace owls {
+namespace owl {
     nlohmann::json to_json(vector<KernelTrace> kernel_traces);
     void json_to_file(nlohmann::json j, const char* filename);
     void json_to_pipe(nlohmann::json j, const char* pipename);

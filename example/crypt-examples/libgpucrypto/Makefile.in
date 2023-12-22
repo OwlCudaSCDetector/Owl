@@ -4,7 +4,7 @@
 CUDA_TOOLKIT_DIR = /usr/local/cuda-11.6
 COMPUTE_CAPABILITY = 86
 HOME_DIR = $(PWD)
-#/root/owls/example/crypt-examples/libgpucrypto
+#/root/owl/example/crypt-examples/libgpucrypto
 OPENSSL_DIR = $(HOME_DIR)/openssl-1.0.2l
 
 #openssl config

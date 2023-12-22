@@ -2,7 +2,7 @@
 #include "bt.hpp"
 
 
-namespace owls {
+namespace owl {
 
 FunctionInfo* extract_func_info(const char* str) {
     FunctionInfo *info = new FunctionInfo();

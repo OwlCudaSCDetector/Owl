@@ -6,7 +6,7 @@
 
 using namespace nlohmann;
 
-namespace owls {
+namespace owl {
 json to_json(vector<KernelTrace> kernel_traces){
     json result = json::object();
     result["type"] = to_str(JsonType::kernel);

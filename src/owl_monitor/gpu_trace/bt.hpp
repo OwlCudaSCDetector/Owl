@@ -19,7 +19,7 @@ typedef struct {
 
 using BackTrace = vector<FunctionInfo *>;
 
-namespace owls {
+namespace owl {
 FunctionInfo *extract_func_info(const char *str);
 }
 

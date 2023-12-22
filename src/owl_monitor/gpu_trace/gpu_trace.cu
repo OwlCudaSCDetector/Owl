@@ -131,8 +131,8 @@ void send_kernel_start_data(u32 kernel_id, u64 func_id, Dim block, Dim thread) {
     ACTF("Kernel start : 0x%lx - %d", func_id, kernel_id);
 }
 
-void call_owls_device_trace(Instr *instr, trace_args_t ta) {
-  nvbit_insert_call(instr, "__owls_device_trace", IPOINT_BEFORE);
+void call_owl_device_trace(Instr *instr, trace_args_t ta) {
+  nvbit_insert_call(instr, "__owl_device_trace", IPOINT_BEFORE);
   nvbit_add_call_arg_guard_pred_val(instr);
   nvbit_add_call_arg_const_val32(instr, ta.type);
   nvbit_add_call_arg_const_val64(instr, ta.bb_id);
@@ -187,7 +187,7 @@ void instrument_mem_access(CUcontext ctx, basic_block_t *bb, u64 bb_id) {
             .extra = mref_idx,
             .pchannel_dev = (u64)get_ctx_state(ctx)->channel_dev,
         };
-        call_owls_device_trace(instr, ta);
+        call_owl_device_trace(instr, ta);
         DEBUG(3)
         WARNF("Memory Access in Instr %d", instr->getIdx());
         mref_idx++;
@@ -224,7 +224,7 @@ void instrument_bb_access(CUcontext ctx, basic_block_t *bb, u64 bb_id) {
       .desc = bb->instrs.size(),
       .pchannel_dev = (u64)get_ctx_state(ctx)->channel_dev,
   };
-  call_owls_device_trace(first_instr, ta);
+  call_owl_device_trace(first_instr, ta);
 
 }
 
@@ -306,7 +306,7 @@ BackTrace get_backtrace(size_t max_size = 100) {
 
     for (int i = 6; i < size; i++) {
 
-      bt.push_back(owls::extract_func_info(strings[i]));
+      bt.push_back(owl::extract_func_info(strings[i]));
     }
   }
 
@@ -485,12 +485,12 @@ void DumpJson(nlohmann::json j) {
         new char[strlen(dirname) + strlen("/kernel.json") + 1];
     strcpy(kernel_filename, dirname);
     strcat(kernel_filename, "/kernel.json");
-    owls::json_to_file(j, kernel_filename);
+    owl::json_to_file(j, kernel_filename);
   }
-  if (char *pipename = getenv("OWLS_PIPE2"))
-    owls::json_to_pipe(j, pipename);
-  if (char *filename = getenv("OWLS_FILE"))
-    owls::json_to_file(j, filename);
+  if (char *pipename = getenv("OWL_PIPE2"))
+    owl::json_to_pipe(j, pipename);
+  if (char *filename = getenv("OWL_FILE"))
+    owl::json_to_file(j, filename);
 }
 
 void collect_kernel_trace() {
@@ -510,7 +510,7 @@ void collect_kernel_trace() {
   }
 
   DEBUG(1) ACTF("staring dump kernel trace");
-  nlohmann::json j = owls::to_json(kernel_traces);
+  nlohmann::json j = owl::to_json(kernel_traces);
 
   DumpJson(j);
 }

@@ -90,10 +90,10 @@ bool create_dir(const char *path) {
 }
 
 void DumpJson(json j) {
-  if (char *pipename = getenv(OWLS_PIPE))
-    owls::json_to_pipe(j, pipename);
-  if (char *filename = getenv(OWLS_FILE))
-    owls::json_to_file(j, filename);
+  if (char *pipename = getenv(OWL_PIPE))
+    owl::json_to_pipe(j, pipename);
+  if (char *filename = getenv(OWL_FILE))
+    owl::json_to_file(j, filename);
 }
 
 typedef struct {

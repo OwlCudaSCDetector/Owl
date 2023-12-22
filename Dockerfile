@@ -14,8 +14,8 @@ RUN wget https://cmake.org/files/v3.20/cmake-3.20.0-linux-x86_64.tar.gz -O /tmp/
 RUN curl --tlsv1.2 -sSf https://sh.rustup.rs -o /tmp/rustup.rs && \
         sh /tmp/rustup.rs -y && echo "source \"$HOME/.cargo/env\"\n" >> .zshrc
 
-# configure ssh key for git
-RUN git clone https://siriuswhiter:3a0d6389eab51d867a64c10d94b7bb8d@gitee.com/CyoeeA9e/owls.git
+# clone code
+RUN git clone git@github.com:OwlCudaSCDetector/Owl.git
 
 # for me
 RUN apt install -y vim

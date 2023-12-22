@@ -54,7 +54,7 @@ test: $(TARGET)
 	make -C ./test
 
 test_aes: test
-	/root/owls/src/owl_analyzer/target/release/owl_analyzer --cmds "/root/owls/src/owl-wrapper ./bin/aes_test -m ENC -s 0 -f" --rand-cmd "/root/owls/src/owl-wrapper ./bin/aes_test -m ENC -s 0" -t 100
+	/root/owl/src/owl_analyzer/target/release/owl_analyzer --cmds "/root/owl/src/owl-wrapper ./bin/aes_test -m ENC -s 0 -f" --rand-cmd "/root/owl/src/owl-wrapper ./bin/aes_test -m ENC -s 0" -t 100
 
 KEYS_DIR := bin/keys
 KEY_SIZES := 512 1024 2048
@@ -71,10 +71,10 @@ define generate_test_rsa_target
 .PHONY: test_rsa_mp_$(1)
 
 test_rsa_mp_$(1): $(PEM_FILES)
-	/root/owls/src/owl_analyzer/target/release/owl_analyzer --cmds "/root/owls/src/owl-wrapper ./bin/rsa_test -f -m MP -b $(1)" --rand-cmd "/root/owls/src/owl-wrapper ./bin/rsa_test -m MP -b $(1)" -t 1
+	/root/owl/src/owl_analyzer/target/release/owl_analyzer --cmds "/root/owl/src/owl-wrapper ./bin/rsa_test -f -m MP -b $(1)" --rand-cmd "/root/owl/src/owl-wrapper ./bin/rsa_test -m MP -b $(1)" -t 1
 
 test_rsa_rns_$(1): $(PEM_FILES)
-	/root/owls/src/owl_analyzer/target/release/owl_analyzer --cmds "/root/owls/src/owl-wrapper ./bin/rsa_test -f -m RNS -b $(1)" --rand-cmd "/root/owls/src/owl-wrapper ./bin/rsa_test -m RNS -b $(1)" -t 100
+	/root/owl/src/owl_analyzer/target/release/owl_analyzer --cmds "/root/owl/src/owl-wrapper ./bin/rsa_test -f -m RNS -b $(1)" --rand-cmd "/root/owl/src/owl-wrapper ./bin/rsa_test -m RNS -b $(1)" -t 100
 	
 endef
 

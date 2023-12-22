@@ -27,7 +27,7 @@ __device__ void dump_common_info(common_info_t &common_info) {
       common_info.ctaid.x, common_info.ctaid.y, common_info.ctaid.z);
 }
 
-extern "C" __device__ __noinline__ void __owls_device_trace(int pred, u32 type,
+extern "C" __device__ __noinline__ void __owl_device_trace(int pred, u32 type,
                                                             u64 bb_id, u64 desc,
                                                             u64 extra,
                                                             u64 pchannel_dev) {

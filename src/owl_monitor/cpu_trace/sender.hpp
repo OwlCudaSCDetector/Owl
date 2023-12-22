@@ -17,11 +17,11 @@ inline const char* to_str(JsonType jt) {
         }
 }
 
-#define OWLS_PIPE "OWLS_PIPE2"
-#define OWLS_FILE "OWLS_FILE"
+#define OWL_PIPE "OWL_PIPE2"
+#define OWL_FILE "OWL_FILE"
 #define OWL_TRACE "OWL_TRACE"
 
-namespace owls {
+namespace owl {
 void json_to_file(nlohmann::json j, const char *filename) {
   std::ofstream o(filename);
   o << std::setw(4) << j << std::endl;
@@ -32,4 +32,4 @@ void json_to_pipe(nlohmann::json j, const char *pipename) {
   outfifo << j;
   outfifo.close();
 }
-} // namespace owls
+} // namespace owl

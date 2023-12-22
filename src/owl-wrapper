@@ -1,2 +1,2 @@
 #!/bin/bash
-NOBANNER=1 LD_PRELOAD=/root/owls/build/lib/gpu_trace.so /root/owls/src/owls_monitor/pin_root/pin -t /root/owls/build/lib/cpu_trace.so -- $@
+NOBANNER=1 LD_PRELOAD=/root/owl/build/lib/gpu_trace.so /root/owl/src/owl_monitor/pin_root/pin -t /root/owl/build/lib/cpu_trace.so -- $@

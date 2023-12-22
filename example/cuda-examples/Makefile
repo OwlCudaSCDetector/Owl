@@ -13,5 +13,5 @@ clean:
 
 test:
 	@cd .. && make
-	@../../src/owl_analyzer/target/release/owl_analyzer --cmds-file ./cmds --rand-cmd "/root/owls/src/owl-wrapper /root/owls/example/cuda-examples/randaccess" -t 2
+	@../../src/owl_analyzer/target/release/owl_analyzer --cmds-file ./cmds --rand-cmd "/root/owl/src/owl-wrapper /root/owl/example/cuda-examples/randaccess" -t 2
 

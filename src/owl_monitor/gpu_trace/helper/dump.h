@@ -1,5 +1,5 @@
-#ifndef OWLS_TRACE_DUMP_H
-#define OWLS_TRACE_DUMP_H
+#ifndef OWL_TRACE_DUMP_H
+#define OWL_TRACE_DUMP_H
 #pragma once
 
 #include <iostream>

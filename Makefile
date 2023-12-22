@@ -10,18 +10,18 @@ CXXFLAGS=$(FLAGS)
 all: llvm torch monitor
 
 monitor: llvm_prepare
-	make -C src/owls_monitor
+	make -C src/owl_monitor
 	mkdir -p ${BUILD_DIR}/lib 
-	cp src/owls_monitor/gpu_trace/gpu_trace.so ${BUILD_DIR}/lib/gpu_trace.so 
-	cp src/owls_monitor/cpu_trace/obj-intel64/cpu_trace.so ${BUILD_DIR}/lib/cpu_trace.so
+	cp src/owl_monitor/gpu_trace/gpu_trace.so ${BUILD_DIR}/lib/gpu_trace.so 
+	cp src/owl_monitor/cpu_trace/obj-intel64/cpu_trace.so ${BUILD_DIR}/lib/cpu_trace.so
 
 profiler:
-	make -C experiment/owls_checker/profiler
+	make -C experiment/owl_checker/profiler
 
 .PHONY:
 clean:
 	rm -f gpu_trace.so
-	cd src/owls_monitor && make clean 
+	cd src/owl_monitor && make clean 
 
 llvm_prepare:
 	mkdir -p ${BUILD_DIR}
