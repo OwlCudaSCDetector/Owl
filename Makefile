@@ -1,3 +1,5 @@
+BUILD_DIR=build
+
 all: analyzer monitor
 
 monitor: prepare
@@ -14,5 +16,5 @@ analyzer:
 
 .PHONY:
 clean:
-	rm -f gpu_trace.so
+	rm -f ${BUILD_DIR}/lib/gpu_trace.so ${BUILD_DIR}/lib/cpu_trace.so 
 	cd src/owl_monitor && make clean 
