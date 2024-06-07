@@ -15,15 +15,6 @@ RUN curl --tlsv1.2 -sSf https://sh.rustup.rs -o /tmp/rustup.rs && \
         sh /tmp/rustup.rs -y && echo "source \"$HOME/.cargo/env\"\n" >> .zshrc
 
 # clone code
-RUN git clone git@github.com:OwlCudaSCDetector/Owl.git
+RUN git clone git@github.com:OwlCudaSCDetector/Owl.git owl
 
-# for me
-RUN apt install -y vim
-
-RUN apt install -y zsh && \
-        sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" && \
-        echo "export LD_LIBRARY_PATH=/usr/local/lib\nexport PATH=/usr/local/cuda/bin:$PATH\nDISABLE_UNTRACKED_FILES_DIRTY=\"true\"" >> .zshrc && \
-        chsh --shell /bin/zsh root
-
-RUN apt install -y openssh-server && \
-        service ssh start
+RUN cd owl && make
