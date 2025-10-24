@@ -1,3 +1,9 @@
+# Prefer GCC 10 as nvcc host compiler when available (CUDA 11.x compatibility)
+CXX?=g++
+ifneq ($(shell which g++-10 2>/dev/null),)
+	CXX:=g++-10
+endif
+
 NVCC=nvcc -ccbin=$(CXX) -D_FORCE_INLINES
 
 NVCC_VER_REQ=10.1
@@ -46,4 +52,4 @@ device_trace.o: device_trace.cu
 	$(NVCC) $(INCLUDES) -maxrregcount=24 -Xptxas -astoolspatch --keep-device-functions -arch=sm_$(ARCH) -Xcompiler -Wall -Xcompiler -fPIC -c $< -o $@
 
 clean:
-	rm -f *.so *.o core
+	rm -f *.so *.o core helper/pipe/pipe.o

@@ -1,10 +1,10 @@
 all: gpu_trace cpu_trace
 
 gpu_trace: cpu_trace
-	cd gpu_trace && make
+	+cd gpu_trace && $(MAKE) ARCH=$(ARCH)
 
 cpu_trace: check_and_download_pin
-	make -C cpu_trace/
+	+$(MAKE) -C cpu_trace/
 
 .PHONY: check_and_download_pin
 check_and_download_pin:
@@ -17,5 +17,5 @@ check_and_download_pin:
 	fi
 
 clean:
-	cd gpu_trace && make clean
-	cd cpu_trace && make clean
+	cd gpu_trace && $(MAKE) clean
+	cd cpu_trace && $(MAKE) clean
