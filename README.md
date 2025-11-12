@@ -32,6 +32,12 @@ $ make test
 `src/owl-wrapper` is a wrapper for Intel pins and NVbits. `src/owl-wrapper ${command}` can be used to trace CUDA program execution.
 `src/owl_analyzer/target/release/owl_analyzer` is the core analyzer.
 
+## Documentation
+
+For a deeper dive into architecture, build/run instructions, troubleshooting, and how to interpret reports, see:
+
+- docs/overview.md
+
 
 ## License
 
