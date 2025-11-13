@@ -1,4 +1,8 @@
 #!/bin/bash
 SRC_ROOT=$(dirname "$0")
 OWL_ROOT=$(dirname "$SRC_ROOT")
-NOBANNER=1 LD_PRELOAD=${OWL_ROOT}/build/lib/gpu_trace.so ${OWL_ROOT}/src/owl_monitor/pin_root/pin -t ${OWL_ROOT}/build/lib/cpu_trace.so -- $@
+# Ensure all env vars are exported before Pin spawns the target
+export NOBANNER=1
+export LD_PRELOAD=${OWL_ROOT}/build/lib/gpu_trace.so
+# Pin will inherit and pass these to the target with -injection child
+exec ${OWL_ROOT}/src/owl_monitor/pin_root/pin -injection child -t ${OWL_ROOT}/build/lib/cpu_trace.so -- "$@"

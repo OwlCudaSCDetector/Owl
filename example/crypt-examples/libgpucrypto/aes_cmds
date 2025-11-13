@@ -1,0 +1,1 @@
+/home/alan/Documents/Owl/src/owl-wrapper /home/alan/Documents/Owl/example/crypt-examples/libgpucrypto/bin/aes_test -m ENC -l 1024 -f

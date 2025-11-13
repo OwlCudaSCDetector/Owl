@@ -1,0 +1,28 @@
+[2025-10-29T21:22:27Z INFO  owl_analyzer] --- Finishing trace ---
+[2025-10-29T21:22:27Z INFO  owl_analyzer] Leakage test start
+[2025-10-29T21:22:27Z WARN  owl_analyzer] Only one command, skip stage 1 and 2
+[2025-10-29T21:22:27Z INFO  owl_analyzer] Stage 3 start
+[2025-10-29T21:22:27Z INFO  owl_analyzer] test idx: 0, cmd: `/home/alan/Documents/Owl/src/owl-wrapper /home/alan/Documents/Owl/example/crypt-examples/libgpucrypto/bin/aes_test -m ENC -l 1024 -f`
+[2025-10-29T21:22:27Z INFO  analyzer] collect fix input traces
+[2025-10-29T21:22:27Z INFO  analyzer] run 10 times
+-------------- 1/10 --------------
+[2025-10-29T21:22:27Z INFO  analyzer] Recorded trace path: /home/alan/Documents/Owl/owl_results/0/fix/0/
+------------------------------------------
+AES-128-CBC ENC, Size: 1KB
+------------------------------------------
+#msg latency(usec) thruput(Mbps)
+[0;32m[+] GPUTrace[0m - STARTING CONTEXT 0x5adb8852e670[0m
+[0;32m[+] GPUTrace[0m - CTX 0x00005adb8852e670 - LAUNCH - Kernel pc 0x000072c4eb29b000 - Kernel name AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*) - grid launch id 2 - grid size 1,1,1 - block size 256,1,1 - nregs 40 - shmem 4136 - cuda stream id 0[0m
+[0;32m[+] GPUTrace[0m - CTX 0x00005adb8852e670 - LAUNCH - Kernel pc 0x000072c4eb29b000 - Kernel name AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*) - grid launch id 3 - grid size 1,1,1 - block size 256,1,1 - nregs 40 - shmem 4136 - cuda stream id 0[0m
+   1        552017             0
+[0;32m[+] GPUTrace[0m - TERMINATING CONTEXT 0x5adb8852e670[0m
+-------------- 2/10 --------------
+[2025-10-29T21:22:32Z INFO  analyzer] Recorded trace path: /home/alan/Documents/Owl/owl_results/0/fix/1/
+------------------------------------------
+AES-128-CBC ENC, Size: 1KB
+------------------------------------------
+#msg latency(usec) thruput(Mbps)
+[0;32m[+] GPUTrace[0m - STARTING CONTEXT 0x573b39b4c670[0m
+[0;32m[+] GPUTrace[0m - CTX 0x0000573b39b4c670 - LAUNCH - Kernel pc 0x0000757e4729b000 - Kernel name AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*) - grid launch id 2 - grid size 1,1,1 - block size 256,1,1 - nregs 40 - shmem 4136 - cuda stream id 0[0m
+[0;32m[+] GPUTrace[0m - CTX 0x0000573b39b4c670 - LAUNCH - Kernel pc 0x0000757e4729b000 - Kernel name AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*) - grid launch id 3 - grid size 1,1,1 - block size 256,1,1 - nregs 40 - shmem 4136 - cuda stream id 0[0m
+   1        523836             0

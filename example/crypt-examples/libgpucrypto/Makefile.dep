@@ -1,0 +1,106 @@
+objs/rsa_cuda.o: rsa_cuda.cu rsa_cuda.h bn_kn.h
+
+rsa_cuda.h:
+
+bn_kn.h:
+objs/sha1.o: sha1.cu sha1.hh
+
+sha1.hh:
+objs/mp_modexp_gputest.o: mp_modexp_gputest.cu mp_modexp.h
+
+mp_modexp.h:
+objs/mp_modexp_gpu.o: mp_modexp_gpu.cu mp_modexp.h
+
+mp_modexp.h:
+objs/bn_kn.o: bn_kn.cu bn_kn.h
+
+bn_kn.h:
+objs/aes_kernel.o: aes_kernel.cu aes_core.h aes_kernel.h
+
+aes_core.h:
+
+aes_kernel.h:
+objs/rsa_context_mp.o: rsa_context_mp.cc rsa_context_mp.hh rsa_context.hh \
+ mp_modexp.h device_context.hh pinned_mem_pool.hh memory_pool.hh \
+ cuda_mem_pool.hh
+
+rsa_context_mp.hh:
+
+rsa_context.hh:
+
+mp_modexp.h:
+
+device_context.hh:
+
+pinned_mem_pool.hh:
+
+memory_pool.hh:
+
+cuda_mem_pool.hh:
+objs/mp_modexp_cpu.o: mp_modexp_cpu.cc mp_modexp.h
+
+mp_modexp.h:
+objs/rsa_context.o: rsa_context.cc rsa_context.hh
+
+rsa_context.hh:
+objs/sha_context.o: sha_context.cc sha_context.hh cuda_mem_pool.hh \
+ memory_pool.hh device_context.hh pinned_mem_pool.hh sha1.hh
+
+sha_context.hh:
+
+cuda_mem_pool.hh:
+
+memory_pool.hh:
+
+device_context.hh:
+
+pinned_mem_pool.hh:
+
+sha1.hh:
+objs/device_context.o: device_context.cc device_context.hh pinned_mem_pool.hh \
+ memory_pool.hh cuda_mem_pool.hh
+
+device_context.hh:
+
+pinned_mem_pool.hh:
+
+memory_pool.hh:
+
+cuda_mem_pool.hh:
+objs/mp_modexp.o: mp_modexp.cc mp_modexp.h
+
+mp_modexp.h:
+objs/rsa_context_rns.o: rsa_context_rns.cc rsa_context_rns.hh rsa_context.hh \
+ rsa_cuda.h bn_kn.h
+
+rsa_context_rns.hh:
+
+rsa_context.hh:
+
+rsa_cuda.h:
+
+bn_kn.h:
+objs/aes_context.o: aes_context.cc aes_context.hh cuda_mem_pool.hh \
+ memory_pool.hh device_context.hh pinned_mem_pool.hh aes_kernel.h
+
+aes_context.hh:
+
+cuda_mem_pool.hh:
+
+memory_pool.hh:
+
+device_context.hh:
+
+pinned_mem_pool.hh:
+
+aes_kernel.h:
+objs/cuda_mem_pool.o: cuda_mem_pool.cc cuda_mem_pool.hh memory_pool.hh
+
+cuda_mem_pool.hh:
+
+memory_pool.hh:
+objs/pinned_mem_pool.o: pinned_mem_pool.cc pinned_mem_pool.hh memory_pool.hh
+
+pinned_mem_pool.hh:
+
+memory_pool.hh:

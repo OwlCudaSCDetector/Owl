@@ -1,0 +1,2239 @@
+{
+  "kernel_leak": [],
+  "cf_leak": {
+    "0x7efcda79d6c5:cuLaunchKernel/0x7efce0a1433c:/0x7efce0a69cb6:cudaLaunchKernel/0x5d6ac5920154:/0x5d6ac592022f:/0x5d6ac591ebc1:/0x5d6ac591c7a7:/0x5d6ac591a78d:/0x7efce0229d90:/0x7efce0229e40:__libc_start_main/0x5d6ac591aa8e:": [],
+    "0x7efcda79d6c5:cuLaunchKernel/0x7efce0a1433c:/0x7efce0a69cb6:cudaLaunchKernel/0x5d6ac5920154:/0x5d6ac592022f:/0x5d6ac591ebc1:/0x5d6ac591c80a:/0x5d6ac591a78d:/0x7efce0229d90:/0x7efce0229e40:__libc_start_main/0x5d6ac591aa8e:": []
+  },
+  "df_leak": {
+    "0x7efcda79d6c5:cuLaunchKernel/0x7efce0a1433c:/0x7efce0a69cb6:cudaLaunchKernel/0x5d6ac5920154:/0x5d6ac592022f:/0x5d6ac591ebc1:/0x5d6ac591c80a:/0x5d6ac591a78d:/0x7efce0229d90:/0x7efce0229e40:__libc_start_main/0x5d6ac591aa8e:": [
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 3632,
+        "bb": 1056,
+        "p": 0.054647444894585076
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 4608,
+        "bb": 1056,
+        "p": 0.1641699972477976
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 12800,
+        "bb": 1056,
+        "p": 0.05464744489458522
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 14240,
+        "bb": 1056,
+        "p": 0.01489316614184872
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 2224,
+        "bb": 1056,
+        "p": 0.014893166141848694
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 2768,
+        "bb": 1056,
+        "p": 0.05464744489458515
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 3440,
+        "bb": 1056,
+        "p": 0.0006070782761577349
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 5696,
+        "bb": 1056,
+        "p": 0.054647444894585076
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 3712,
+        "bb": 1056,
+        "p": 0.00009079985952496975
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 4976,
+        "bb": 1056,
+        "p": 0.05464744489458515
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 2784,
+        "bb": 1056,
+        "p": 0.05464744489458515
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 5280,
+        "bb": 1056,
+        "p": 0.1641699972477976
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 7456,
+        "bb": 1056,
+        "p": 0.00009079985952496975
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 2944,
+        "bb": 1056,
+        "p": 0.014893166141848694
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 4992,
+        "bb": 1056,
+        "p": 0.014893166141848694
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 7504,
+        "bb": 1056,
+        "p": 0.05464744489458515
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 5744,
+        "bb": 1056,
+        "p": 0.05464744489458522
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 7808,
+        "bb": 1056,
+        "p": 0.1641699972477976
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 5488,
+        "bb": 1056,
+        "p": 0.014893166141848694
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 6336,
+        "bb": 1056,
+        "p": 0.014893166141848694
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 7952,
+        "bb": 1056,
+        "p": 0.003323114546347866
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 2688,
+        "bb": 1056,
+        "p": 0.01489316614184872
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 8080,
+        "bb": 1056,
+        "p": 0.05464744489458515
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 3392,
+        "bb": 1056,
+        "p": 0.05464744489458515
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 8816,
+        "bb": 1056,
+        "p": 0.05464744489458515
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 10032,
+        "bb": 1056,
+        "p": 0.014893166141848694
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 10624,
+        "bb": 1056,
+        "p": 0.014893166141848694
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 11248,
+        "bb": 1056,
+        "p": 0.014893166141848694
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 4912,
+        "bb": 1056,
+        "p": 0.014893166141848694
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 6864,
+        "bb": 1056,
+        "p": 0.05464744489458515
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 13760,
+        "bb": 1056,
+        "p": 0.05464744489458515
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 13776,
+        "bb": 1056,
+        "p": 0.05464744489458515
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 14192,
+        "bb": 1056,
+        "p": 0.014893166141848694
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 14304,
+        "bb": 1056,
+        "p": 0.05464744489458515
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 5184,
+        "bb": 1056,
+        "p": 0.014893166141848694
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 5424,
+        "bb": 1056,
+        "p": 0.05464744489458515
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 4752,
+        "bb": 1056,
+        "p": 0.014893166141848666
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 8912,
+        "bb": 1056,
+        "p": 0.0033231145463478748
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 11808,
+        "bb": 1056,
+        "p": 0.05464744489458522
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 12128,
+        "bb": 1056,
+        "p": 0.0006070782761577349
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 2192,
+        "bb": 1056,
+        "p": 0.003323114546347866
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 5440,
+        "bb": 1056,
+        "p": 0.05464744489458522
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 3792,
+        "bb": 1056,
+        "p": 0.014893166141848694
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 12592,
+        "bb": 1056,
+        "p": 0.014893166141848694
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 4096,
+        "bb": 1056,
+        "p": 0.01489316614184872
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 10864,
+        "bb": 1056,
+        "p": 0.0006070782761577327
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 9552,
+        "bb": 1056,
+        "p": 0.0006070782761577349
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 12624,
+        "bb": 1056,
+        "p": 0.014893166141848694
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 9472,
+        "bb": 1056,
+        "p": 0.014893166141848694
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 7008,
+        "bb": 1056,
+        "p": 0.05464744489458515
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 7536,
+        "bb": 1056,
+        "p": 0.014893166141848666
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 13328,
+        "bb": 1056,
+        "p": 0.05464744489458515
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 5248,
+        "bb": 1056,
+        "p": 0.014893166141848694
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 11056,
+        "bb": 1056,
+        "p": 0.014893166141848694
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 13184,
+        "bb": 1056,
+        "p": 0.05464744489458522
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 3808,
+        "bb": 1056,
+        "p": 0.014893166141848694
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 9568,
+        "bb": 1056,
+        "p": 0.0006070782761577327
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 4368,
+        "bb": 1056,
+        "p": 0.05464744489458522
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 2752,
+        "bb": 1056,
+        "p": 0.014893166141848694
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 3120,
+        "bb": 1056,
+        "p": 0.05464744489458515
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 6640,
+        "bb": 1056,
+        "p": 0.05464744489458522
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 7792,
+        "bb": 1056,
+        "p": 0.05464744489458515
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 6992,
+        "bb": 1056,
+        "p": 0.014893166141848694
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 2144,
+        "bb": 1056,
+        "p": 0.05464744489458515
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 6608,
+        "bb": 1056,
+        "p": 0.05464744489458515
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 7936,
+        "bb": 1056,
+        "p": 0.05464744489458515
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 8928,
+        "bb": 1056,
+        "p": 0.05464744489458522
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 4128,
+        "bb": 1056,
+        "p": 0.1641699972477976
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 12080,
+        "bb": 1056,
+        "p": 0.05464744489458515
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 4768,
+        "bb": 1056,
+        "p": 0.05464744489458515
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 12368,
+        "bb": 1056,
+        "p": 0.05464744489458522
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 13104,
+        "bb": 1056,
+        "p": 0.0006070782761577349
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 8176,
+        "bb": 1056,
+        "p": 0.014893166141848694
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 6000,
+        "bb": 1056,
+        "p": 0.00009079985952496991
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 11152,
+        "bb": 1056,
+        "p": 0.05464744489458515
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 13744,
+        "bb": 1056,
+        "p": 0.014893166141848694
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 10320,
+        "bb": 1056,
+        "p": 0.014893166141848694
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 13376,
+        "bb": 1056,
+        "p": 0.014893166141848694
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 8320,
+        "bb": 1056,
+        "p": 0.003323114546347866
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 6672,
+        "bb": 1056,
+        "p": 0.05464744489458515
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 8528,
+        "bb": 1056,
+        "p": 0.05464744489458515
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 7248,
+        "bb": 1056,
+        "p": 0.1641699972477976
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 13456,
+        "bb": 1056,
+        "p": 0.01489316614184872
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 10112,
+        "bb": 1056,
+        "p": 0.014893166141848694
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 10368,
+        "bb": 1056,
+        "p": 0.014893166141848694
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 3760,
+        "bb": 1056,
+        "p": 0.1641699972477976
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 12064,
+        "bb": 1056,
+        "p": 0.0006070782761577349
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 11392,
+        "bb": 1056,
+        "p": 0.05464744489458522
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 6928,
+        "bb": 1056,
+        "p": 0.014893166141848694
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 11024,
+        "bb": 1056,
+        "p": 0.05464744489458515
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 13664,
+        "bb": 1056,
+        "p": 0.014893166141848694
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 14224,
+        "bb": 1056,
+        "p": 0.054647444894585076
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 2992,
+        "bb": 1056,
+        "p": 0.0033231145463478748
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 2976,
+        "bb": 1056,
+        "p": 0.05464744489458515
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 9824,
+        "bb": 1056,
+        "p": 0.003323114546347866
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 3424,
+        "bb": 1056,
+        "p": 0.05464744489458515
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 3344,
+        "bb": 1056,
+        "p": 0.0033231145463478748
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 14288,
+        "bb": 1056,
+        "p": 0.0033231145463478748
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 11488,
+        "bb": 1056,
+        "p": 0.0006070782761577349
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 9152,
+        "bb": 1056,
+        "p": 0.014893166141848694
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 10608,
+        "bb": 1056,
+        "p": 0.014893166141848694
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 11184,
+        "bb": 1056,
+        "p": 0.05464744489458515
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 11792,
+        "bb": 1056,
+        "p": 0.05464744489458515
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 9712,
+        "bb": 1056,
+        "p": 0.05464744489458522
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 7744,
+        "bb": 1056,
+        "p": 0.05464744489458515
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 7664,
+        "bb": 1056,
+        "p": 0.014893166141848694
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 9376,
+        "bb": 1056,
+        "p": 0.014893166141848694
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 10256,
+        "bb": 1056,
+        "p": 0.014893166141848694
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 12944,
+        "bb": 1056,
+        "p": 0.05464744489458515
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 14032,
+        "bb": 1056,
+        "p": 0.014893166141848694
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 10064,
+        "bb": 1056,
+        "p": 0.014893166141848694
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 5296,
+        "bb": 1056,
+        "p": 0.1641699972477976
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 3600,
+        "bb": 1056,
+        "p": 0.1641699972477976
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 6272,
+        "bb": 1056,
+        "p": 0.0033231145463478748
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 6576,
+        "bb": 1056,
+        "p": 0.014893166141848694
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 10560,
+        "bb": 1056,
+        "p": 0.05464744489458522
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 12352,
+        "bb": 1056,
+        "p": 0.05464744489458522
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 7184,
+        "bb": 1056,
+        "p": 0.014893166141848694
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 8432,
+        "bb": 1056,
+        "p": 0.00009079985952496991
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 10688,
+        "bb": 1056,
+        "p": 0.05464744489458515
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 10880,
+        "bb": 1056,
+        "p": 0.05464744489458515
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 14096,
+        "bb": 1056,
+        "p": 0.05464744489458522
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 8496,
+        "bb": 1056,
+        "p": 0.014893166141848694
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 3312,
+        "bb": 1056,
+        "p": 0.0033231145463478748
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 4352,
+        "bb": 1056,
+        "p": 0.05464744489458515
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 7232,
+        "bb": 1056,
+        "p": 0.003323114546347866
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 8992,
+        "bb": 1056,
+        "p": 0.014893166141848694
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 8944,
+        "bb": 1056,
+        "p": 0.014893166141848694
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 3360,
+        "bb": 1056,
+        "p": 0.014893166141848694
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 9168,
+        "bb": 1056,
+        "p": 0.05464744489458522
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 12608,
+        "bb": 1056,
+        "p": 0.054647444894585076
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 12816,
+        "bb": 1056,
+        "p": 0.014893166141848694
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 6032,
+        "bb": 1056,
+        "p": 0.003323114546347866
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 8864,
+        "bb": 1056,
+        "p": 0.05464744489458515
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 3088,
+        "bb": 1056,
+        "p": 0.014893166141848694
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 4064,
+        "bb": 1056,
+        "p": 0.05464744489458515
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 7264,
+        "bb": 1056,
+        "p": 0.00009079985952496975
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 9360,
+        "bb": 1056,
+        "p": 0.00009079985952496975
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 13408,
+        "bb": 1056,
+        "p": 0.003323114546347866
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 5808,
+        "bb": 1056,
+        "p": 0.014893166141848694
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 10096,
+        "bb": 1056,
+        "p": 0.054647444894585076
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 2720,
+        "bb": 1056,
+        "p": 0.01489316614184872
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 12768,
+        "bb": 1056,
+        "p": 0.014893166141848694
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 8592,
+        "bb": 1056,
+        "p": 0.0033231145463478748
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 4320,
+        "bb": 1056,
+        "p": 0.014893166141848694
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 9808,
+        "bb": 1056,
+        "p": 0.0033231145463478748
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 5024,
+        "bb": 1056,
+        "p": 0.05464744489458515
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 6752,
+        "bb": 1056,
+        "p": 0.05464744489458515
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 8224,
+        "bb": 1056,
+        "p": 0.1641699972477976
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 10528,
+        "bb": 1056,
+        "p": 0.054647444894585076
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 4176,
+        "bb": 1056,
+        "p": 0.054647444894585076
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 9680,
+        "bb": 1056,
+        "p": 0.014893166141848694
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 6064,
+        "bb": 1056,
+        "p": 0.1641699972477976
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 12240,
+        "bb": 1056,
+        "p": 0.05464744489458515
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 8064,
+        "bb": 1056,
+        "p": 0.05464744489458515
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 8608,
+        "bb": 1056,
+        "p": 0.014893166141848694
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 8208,
+        "bb": 1056,
+        "p": 0.05464744489458515
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 10240,
+        "bb": 1056,
+        "p": 0.014893166141848694
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 10832,
+        "bb": 1056,
+        "p": 0.05464744489458515
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 6656,
+        "bb": 1056,
+        "p": 0.01489316614184872
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 5792,
+        "bb": 1056,
+        "p": 0.05464744489458522
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 13088,
+        "bb": 1056,
+        "p": 0.014893166141848694
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 5552,
+        "bb": 1056,
+        "p": 0.054647444894585076
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 11616,
+        "bb": 1056,
+        "p": 0.05464744489458515
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 6320,
+        "bb": 1056,
+        "p": 0.014893166141848694
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 2640,
+        "bb": 1056,
+        "p": 0.014893166141848694
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 12544,
+        "bb": 1056,
+        "p": 0.05464744489458515
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 4624,
+        "bb": 1056,
+        "p": 0.014893166141848694
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 11984,
+        "bb": 1056,
+        "p": 0.1641699972477976
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 9184,
+        "bb": 1056,
+        "p": 0.014893166141848694
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 14144,
+        "bb": 1056,
+        "p": 0.05464744489458522
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 6352,
+        "bb": 1056,
+        "p": 0.014893166141848694
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 14272,
+        "bb": 1056,
+        "p": 0.05464744489458522
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 4112,
+        "bb": 1056,
+        "p": 0.014893166141848666
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 5728,
+        "bb": 1056,
+        "p": 0.1641699972477976
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 7568,
+        "bb": 1056,
+        "p": 0.16416999724779746
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 4592,
+        "bb": 1056,
+        "p": 0.003323114546347866
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 6048,
+        "bb": 1056,
+        "p": 0.05464744489458515
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 8576,
+        "bb": 1056,
+        "p": 0.00009079985952496975
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 12032,
+        "bb": 1056,
+        "p": 0.00009079985952496975
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 10544,
+        "bb": 1056,
+        "p": 0.05464744489458515
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 12960,
+        "bb": 1056,
+        "p": 0.014893166141848694
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 4544,
+        "bb": 1056,
+        "p": 0.014893166141848694
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 11040,
+        "bb": 1056,
+        "p": 0.05464744489458522
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 11728,
+        "bb": 1056,
+        "p": 0.014893166141848694
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 11824,
+        "bb": 1056,
+        "p": 0.05464744489458515
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 7552,
+        "bb": 1056,
+        "p": 0.014893166141848694
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 5040,
+        "bb": 1056,
+        "p": 0.05464744489458515
+      }
+    ],
+    "0x7efcda79d6c5:cuLaunchKernel/0x7efce0a1433c:/0x7efce0a69cb6:cudaLaunchKernel/0x5d6ac5920154:/0x5d6ac592022f:/0x5d6ac591ebc1:/0x5d6ac591c7a7:/0x5d6ac591a78d:/0x7efce0229d90:/0x7efce0229e40:__libc_start_main/0x5d6ac591aa8e:": [
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 8928,
+        "bb": 1056,
+        "p": 0.05464744489458522
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 11392,
+        "bb": 1056,
+        "p": 0.05464744489458522
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 12800,
+        "bb": 1056,
+        "p": 0.05464744489458522
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 2720,
+        "bb": 1056,
+        "p": 0.01489316614184872
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 8080,
+        "bb": 1056,
+        "p": 0.05464744489458515
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 6272,
+        "bb": 1056,
+        "p": 0.0033231145463478748
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 12352,
+        "bb": 1056,
+        "p": 0.05464744489458522
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 10688,
+        "bb": 1056,
+        "p": 0.05464744489458515
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 2944,
+        "bb": 1056,
+        "p": 0.014893166141848694
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 8816,
+        "bb": 1056,
+        "p": 0.05464744489458515
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 12304,
+        "bb": 1056,
+        "p": 0.05464744489458515
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 4992,
+        "bb": 1056,
+        "p": 0.014893166141848694
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 11152,
+        "bb": 1056,
+        "p": 0.05464744489458515
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 14304,
+        "bb": 1056,
+        "p": 0.05464744489458515
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 9168,
+        "bb": 1056,
+        "p": 0.05464744489458522
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 12080,
+        "bb": 1056,
+        "p": 0.05464744489458515
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 14240,
+        "bb": 1056,
+        "p": 0.01489316614184872
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 4176,
+        "bb": 1056,
+        "p": 0.054647444894585076
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 4592,
+        "bb": 1056,
+        "p": 0.003323114546347866
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 2784,
+        "bb": 1056,
+        "p": 0.05464744489458515
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 3600,
+        "bb": 1056,
+        "p": 0.1641699972477976
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 14096,
+        "bb": 1056,
+        "p": 0.05464744489458522
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 9568,
+        "bb": 1056,
+        "p": 0.0006070782761577327
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 7952,
+        "bb": 1056,
+        "p": 0.003323114546347866
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 10064,
+        "bb": 1056,
+        "p": 0.014893166141848694
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 2144,
+        "bb": 1056,
+        "p": 0.05464744489458515
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 4608,
+        "bb": 1056,
+        "p": 0.1641699972477976
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 5792,
+        "bb": 1056,
+        "p": 0.05464744489458522
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 9552,
+        "bb": 1056,
+        "p": 0.0006070782761577349
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 9808,
+        "bb": 1056,
+        "p": 0.0033231145463478748
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 4352,
+        "bb": 1056,
+        "p": 0.05464744489458515
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 2192,
+        "bb": 1056,
+        "p": 0.003323114546347866
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 9376,
+        "bb": 1056,
+        "p": 0.014893166141848694
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 10240,
+        "bb": 1056,
+        "p": 0.014893166141848694
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 10528,
+        "bb": 1056,
+        "p": 0.054647444894585076
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 11024,
+        "bb": 1056,
+        "p": 0.05464744489458515
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 12032,
+        "bb": 1056,
+        "p": 0.00009079985952496975
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 12368,
+        "bb": 1056,
+        "p": 0.05464744489458522
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 13408,
+        "bb": 1056,
+        "p": 0.003323114546347866
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 10112,
+        "bb": 1056,
+        "p": 0.014893166141848694
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 14288,
+        "bb": 1056,
+        "p": 0.0033231145463478748
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 5296,
+        "bb": 1056,
+        "p": 0.1641699972477976
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 10560,
+        "bb": 1056,
+        "p": 0.05464744489458522
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 11792,
+        "bb": 1056,
+        "p": 0.05464744489458515
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 7232,
+        "bb": 1056,
+        "p": 0.003323114546347866
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 5440,
+        "bb": 1056,
+        "p": 0.05464744489458522
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 7552,
+        "bb": 1056,
+        "p": 0.014893166141848694
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 3632,
+        "bb": 1056,
+        "p": 0.054647444894585076
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 11056,
+        "bb": 1056,
+        "p": 0.014893166141848694
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 7008,
+        "bb": 1056,
+        "p": 0.05464744489458515
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 2224,
+        "bb": 1056,
+        "p": 0.014893166141848694
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 8176,
+        "bb": 1056,
+        "p": 0.014893166141848694
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 12240,
+        "bb": 1056,
+        "p": 0.05464744489458515
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 12624,
+        "bb": 1056,
+        "p": 0.014893166141848694
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 2768,
+        "bb": 1056,
+        "p": 0.05464744489458515
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 4320,
+        "bb": 1056,
+        "p": 0.014893166141848694
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 2688,
+        "bb": 1056,
+        "p": 0.01489316614184872
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 4064,
+        "bb": 1056,
+        "p": 0.05464744489458515
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 7264,
+        "bb": 1056,
+        "p": 0.00009079985952496975
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 9184,
+        "bb": 1056,
+        "p": 0.014893166141848694
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 9712,
+        "bb": 1056,
+        "p": 0.05464744489458522
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 6960,
+        "bb": 1056,
+        "p": 0.05464744489458522
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 10368,
+        "bb": 1056,
+        "p": 0.014893166141848694
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 10864,
+        "bb": 1056,
+        "p": 0.0006070782761577327
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 13456,
+        "bb": 1056,
+        "p": 0.01489316614184872
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 7184,
+        "bb": 1056,
+        "p": 0.014893166141848694
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 10880,
+        "bb": 1056,
+        "p": 0.05464744489458515
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 13712,
+        "bb": 1056,
+        "p": 0.014893166141848694
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 12960,
+        "bb": 1056,
+        "p": 0.014893166141848694
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 14192,
+        "bb": 1056,
+        "p": 0.014893166141848694
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 8592,
+        "bb": 1056,
+        "p": 0.0033231145463478748
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 10256,
+        "bb": 1056,
+        "p": 0.014893166141848694
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 3440,
+        "bb": 1056,
+        "p": 0.0006070782761577349
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 5808,
+        "bb": 1056,
+        "p": 0.014893166141848694
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 8528,
+        "bb": 1056,
+        "p": 0.05464744489458515
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 3808,
+        "bb": 1056,
+        "p": 0.014893166141848694
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 3760,
+        "bb": 1056,
+        "p": 0.1641699972477976
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 6992,
+        "bb": 1056,
+        "p": 0.014893166141848694
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 8224,
+        "bb": 1056,
+        "p": 0.1641699972477976
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 4752,
+        "bb": 1056,
+        "p": 0.014893166141848666
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 8576,
+        "bb": 1056,
+        "p": 0.00009079985952496975
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 8432,
+        "bb": 1056,
+        "p": 0.00009079985952496991
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 5728,
+        "bb": 1056,
+        "p": 0.1641699972477976
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 3792,
+        "bb": 1056,
+        "p": 0.014893166141848694
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 8208,
+        "bb": 1056,
+        "p": 0.05464744489458515
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 9392,
+        "bb": 1056,
+        "p": 0.05464744489458515
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 4768,
+        "bb": 1056,
+        "p": 0.05464744489458515
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 10544,
+        "bb": 1056,
+        "p": 0.05464744489458515
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 10608,
+        "bb": 1056,
+        "p": 0.014893166141848694
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 11040,
+        "bb": 1056,
+        "p": 0.05464744489458522
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 11184,
+        "bb": 1056,
+        "p": 0.05464744489458515
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 2640,
+        "bb": 1056,
+        "p": 0.014893166141848694
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 4368,
+        "bb": 1056,
+        "p": 0.05464744489458522
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 9680,
+        "bb": 1056,
+        "p": 0.014893166141848694
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 8944,
+        "bb": 1056,
+        "p": 0.014893166141848694
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 8496,
+        "bb": 1056,
+        "p": 0.014893166141848694
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 9824,
+        "bb": 1056,
+        "p": 0.003323114546347866
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 6864,
+        "bb": 1056,
+        "p": 0.05464744489458515
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 11456,
+        "bb": 1056,
+        "p": 0.01489316614184872
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 8064,
+        "bb": 1056,
+        "p": 0.05464744489458515
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 11728,
+        "bb": 1056,
+        "p": 0.014893166141848694
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 12592,
+        "bb": 1056,
+        "p": 0.014893166141848694
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 12816,
+        "bb": 1056,
+        "p": 0.014893166141848694
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 13328,
+        "bb": 1056,
+        "p": 0.05464744489458515
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 5248,
+        "bb": 1056,
+        "p": 0.014893166141848694
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 6000,
+        "bb": 1056,
+        "p": 0.00009079985952496991
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 8992,
+        "bb": 1056,
+        "p": 0.014893166141848694
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 12768,
+        "bb": 1056,
+        "p": 0.014893166141848694
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 7248,
+        "bb": 1056,
+        "p": 0.1641699972477976
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 13088,
+        "bb": 1056,
+        "p": 0.014893166141848694
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 11824,
+        "bb": 1056,
+        "p": 0.05464744489458515
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 6048,
+        "bb": 1056,
+        "p": 0.05464744489458515
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 7568,
+        "bb": 1056,
+        "p": 0.16416999724779746
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 13440,
+        "bb": 1056,
+        "p": 0.014893166141848694
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 7456,
+        "bb": 1056,
+        "p": 0.00009079985952496975
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 5040,
+        "bb": 1056,
+        "p": 0.05464744489458515
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 13664,
+        "bb": 1056,
+        "p": 0.014893166141848694
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 14144,
+        "bb": 1056,
+        "p": 0.05464744489458522
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 11616,
+        "bb": 1056,
+        "p": 0.05464744489458515
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 3088,
+        "bb": 1056,
+        "p": 0.014893166141848694
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 6352,
+        "bb": 1056,
+        "p": 0.014893166141848694
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 12128,
+        "bb": 1056,
+        "p": 0.0006070782761577349
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 4544,
+        "bb": 1056,
+        "p": 0.014893166141848694
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 6608,
+        "bb": 1056,
+        "p": 0.05464744489458515
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 3344,
+        "bb": 1056,
+        "p": 0.0033231145463478748
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 2976,
+        "bb": 1056,
+        "p": 0.05464744489458515
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 6336,
+        "bb": 1056,
+        "p": 0.014893166141848694
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 7808,
+        "bb": 1056,
+        "p": 0.1641699972477976
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 7936,
+        "bb": 1056,
+        "p": 0.05464744489458515
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 8320,
+        "bb": 1056,
+        "p": 0.003323114546347866
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 10032,
+        "bb": 1056,
+        "p": 0.014893166141848694
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 5696,
+        "bb": 1056,
+        "p": 0.054647444894585076
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 12064,
+        "bb": 1056,
+        "p": 0.0006070782761577349
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 7664,
+        "bb": 1056,
+        "p": 0.014893166141848694
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 5424,
+        "bb": 1056,
+        "p": 0.05464744489458515
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 5552,
+        "bb": 1056,
+        "p": 0.054647444894585076
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 6672,
+        "bb": 1056,
+        "p": 0.05464744489458515
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 3120,
+        "bb": 1056,
+        "p": 0.05464744489458515
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 3424,
+        "bb": 1056,
+        "p": 0.05464744489458515
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 5184,
+        "bb": 1056,
+        "p": 0.014893166141848694
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 5488,
+        "bb": 1056,
+        "p": 0.014893166141848694
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 4912,
+        "bb": 1056,
+        "p": 0.014893166141848694
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 2992,
+        "bb": 1056,
+        "p": 0.0033231145463478748
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 7536,
+        "bb": 1056,
+        "p": 0.014893166141848666
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 5280,
+        "bb": 1056,
+        "p": 0.1641699972477976
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 6576,
+        "bb": 1056,
+        "p": 0.014893166141848694
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 7792,
+        "bb": 1056,
+        "p": 0.05464744489458515
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 5744,
+        "bb": 1056,
+        "p": 0.05464744489458522
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 8864,
+        "bb": 1056,
+        "p": 0.05464744489458515
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 9856,
+        "bb": 1056,
+        "p": 0.05464744489458515
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 6752,
+        "bb": 1056,
+        "p": 0.05464744489458515
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 10832,
+        "bb": 1056,
+        "p": 0.05464744489458515
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 4112,
+        "bb": 1056,
+        "p": 0.014893166141848666
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 5024,
+        "bb": 1056,
+        "p": 0.05464744489458515
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 13104,
+        "bb": 1056,
+        "p": 0.0006070782761577349
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 11808,
+        "bb": 1056,
+        "p": 0.05464744489458522
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 8608,
+        "bb": 1056,
+        "p": 0.014893166141848694
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 14224,
+        "bb": 1056,
+        "p": 0.054647444894585076
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 3712,
+        "bb": 1056,
+        "p": 0.00009079985952496975
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 9360,
+        "bb": 1056,
+        "p": 0.00009079985952496975
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 11984,
+        "bb": 1056,
+        "p": 0.1641699972477976
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 9152,
+        "bb": 1056,
+        "p": 0.014893166141848694
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 2752,
+        "bb": 1056,
+        "p": 0.014893166141848694
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 13376,
+        "bb": 1056,
+        "p": 0.014893166141848694
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 13760,
+        "bb": 1056,
+        "p": 0.05464744489458515
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 4976,
+        "bb": 1056,
+        "p": 0.05464744489458515
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 6032,
+        "bb": 1056,
+        "p": 0.003323114546347866
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 6640,
+        "bb": 1056,
+        "p": 0.05464744489458522
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 11488,
+        "bb": 1056,
+        "p": 0.0006070782761577349
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 14272,
+        "bb": 1056,
+        "p": 0.05464744489458522
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 10320,
+        "bb": 1056,
+        "p": 0.014893166141848694
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 4128,
+        "bb": 1056,
+        "p": 0.1641699972477976
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 3360,
+        "bb": 1056,
+        "p": 0.014893166141848694
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 3392,
+        "bb": 1056,
+        "p": 0.05464744489458515
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 7744,
+        "bb": 1056,
+        "p": 0.05464744489458515
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 6368,
+        "bb": 1056,
+        "p": 0.05464744489458522
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 6656,
+        "bb": 1056,
+        "p": 0.01489316614184872
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 6320,
+        "bb": 1056,
+        "p": 0.014893166141848694
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 3312,
+        "bb": 1056,
+        "p": 0.0033231145463478748
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 11424,
+        "bb": 1056,
+        "p": 0.05464744489458515
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 12992,
+        "bb": 1056,
+        "p": 0.05464744489458515
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 4096,
+        "bb": 1056,
+        "p": 0.01489316614184872
+      },
+      {
+        "kernel": "AES_cbc_128_encrypt_kernel_SharedMem(unsigned char const*, unsigned char*, unsigned int const*, unsigned char const*, unsigned char*, unsigned int, unsigned char*)",
+        "instr": 4624,
+        "bb": 1056,
+        "p": 0.014893166141848694
+      }
+    ]
+  }
+}

@@ -53,10 +53,45 @@ impl MemAccessInstr {
         log::debug!("{:?}", self.data);
         log::debug!("{:?}", other.data);
         let mut minimum = 100.0;
+        // Commented out automatic CDF plotting - uncomment to enable visualization
+        // let mut plot_idx = 0;
         self.data
             .iter()
             .zip(other.data.iter())
-            .map(|(l, r)| test_mem_impl(l, r, m, n))
+            .enumerate()
+            .map(|(idx, (l, r))| {
+                let p = test_mem_impl(l, r, m, n);
+                
+                // Commented out automatic CDF plotting
+                // Uncomment this section to generate CDF plots for significant leaks
+                /*
+                if p < 0.05 && plot_idx < 5 {
+                    let plot_dir = "owl_cdf_plots";
+                    std::fs::create_dir_all(plot_dir).ok();
+                    
+                    let plot_path = format!(
+                        "{}/instr_0x{:x}_operand_{}_p{:.6}.png",
+                        plot_dir, self.instr, idx, p
+                    );
+                    
+                    log::info!("Generating CDF plot for instruction 0x{:x} operand {} (p={:.6})", 
+                              self.instr, idx, p);
+                    
+                    if let Err(e) = crate::plot::plot_cdf_comparison(
+                        l,
+                        r,
+                        &format!("0x{:x} operand {} (p={:.6})", self.instr, idx, p),
+                        &plot_path,
+                    ) {
+                        log::warn!("Failed to plot CDF: {}", e);
+                    } else {
+                        plot_idx += 1;
+                    }
+                }
+                */
+                
+                p
+            })
             .for_each(|p| {
                 if p < minimum {
                     minimum = p;

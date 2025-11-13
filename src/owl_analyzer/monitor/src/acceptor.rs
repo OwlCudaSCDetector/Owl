@@ -1,4 +1,4 @@
-use std::{fs::File, io::BufReader};
+use std::{fs::{self, File}, io::BufReader};
 
 use crate::raw::{RawAlloc, RawCsFrame, RawData, RawKernelTrace, RawTrace};
 
@@ -65,7 +65,17 @@ impl DataAcceptor {
     }
 
     pub fn kernel(&self) -> Vec<RawKernelTrace> {
-        let file = File::open(format!("{}/kernel.json", self.path)).unwrap();
+        let path = format!("{}/kernel.json", self.path);
+        let file = File::open(&path).unwrap_or_else(|e| {
+            log::error!("Failed to open {}: {}", path, e);
+            log::error!("Directory contents of {}:", self.path);
+            if let Ok(entries) = fs::read_dir(&self.path) {
+                for entry in entries.flatten() {
+                    log::error!("  {:?}", entry.path());
+                }
+            }
+            panic!("kernel.json not found at {}", self.path);
+        });
         let reader = BufReader::new(file);
         let data = serde_json::from_reader(reader).unwrap();
         if let RawData::Kernel(d) = data {

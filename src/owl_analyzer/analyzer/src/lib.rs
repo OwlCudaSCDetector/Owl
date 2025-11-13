@@ -1,8 +1,11 @@
 use std::{
     collections::HashMap,
     io::{BufRead, BufReader},
+    path::PathBuf,
     process::Stdio,
     rc::Rc,
+    thread,
+    time::Duration,
 };
 
 use evidence::Evidence;
@@ -28,6 +31,7 @@ mod trace;
 // pub use trace::Trace;
 
 mod align;
+pub mod plot;
 
 pub struct Analyzer {
     // pub pipe_path: String,
@@ -128,32 +132,52 @@ impl Analyzer {
 fn exec(cmd: &str) -> Result<(), ()> {
     log::debug!("execute test program");
 
-    let mut p = std::process::Command::new("sh");
-    p.arg("-c");
-    p.arg(cmd);
-    let stdout = p
-        .stdout(Stdio::piped())
-        .stderr(Stdio::piped())
-        .spawn()
-        .expect("failed to execute child")
-        .stdout
-        .unwrap();
+    let mut builder = std::process::Command::new("sh");
+    builder.arg("-c").arg(cmd);
+    builder.stdout(Stdio::piped()).stderr(Stdio::piped());
+    let mut child = builder.spawn().expect("failed to execute child");
 
-    let reader = BufReader::new(stdout);
+    // Drain stderr in background to avoid potential blocking if it gets chatty
+    if let Some(stderr) = child.stderr.take() {
+        thread::spawn(move || {
+            let reader = BufReader::new(stderr);
+            for _ in reader.lines().flatten() {
+                // Discard or print lines if desired: eprintln!("{}", line);
+            }
+        });
+    }
 
-    reader
-        .lines()
-        .filter_map(|line| line.ok())
-        .for_each(|line| println!("{}", line));
+    // Read stdout synchronously for user feedback
+    if let Some(stdout) = child.stdout.take() {
+        let reader = BufReader::new(stdout);
+        for line in reader.lines().flatten() {
+            println!("{}", line);
+        }
+    }
 
+    // Ensure the child has fully exited before proceeding, so tracer flushes complete
+    let status = child.wait().expect("failed to wait on child");
+    log::debug!("child exit status: {:?}", status.code());
+    
+    // Give tracer a moment to flush files asynchronously after process exit
+    thread::sleep(Duration::from_millis(500));
+    
+    // Match original behavior: do not fail the run on non-zero exit; the
+    // tracer may still have produced traces we can consume.
     Ok(())
 }
 
 fn prepare(root_path: &str, stage: &str, idx: usize) -> DataAcceptor {
-    let trace_path = format!("{root_path}/{stage}/{idx}/");
-    log::info!("Recorded trace path: {}", trace_path);
-    std::fs::create_dir_all(&trace_path).unwrap();
+    // Build absolute path for OWL_TRACE to avoid any cwd ambiguity
+    let mut path = PathBuf::from(root_path);
+    path.push(stage);
+    path.push(idx.to_string());
 
+    std::fs::create_dir_all(&path).unwrap();
+    let abs = std::fs::canonicalize(&path).unwrap_or(path);
+    let trace_path = abs.to_string_lossy().to_string() + "/";
+
+    log::info!("Recorded trace path: {}", trace_path);
     std::env::set_var("OWL_TRACE", &trace_path);
 
     DataAcceptor::new(trace_path)
